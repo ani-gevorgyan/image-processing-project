@@ -1,3 +1,5 @@
+//taken from the textbook
+
 import ij.ImagePlus;
 import ij.process.ImageProcessor;
 import ij.plugin.filter.PlugInFilter;
