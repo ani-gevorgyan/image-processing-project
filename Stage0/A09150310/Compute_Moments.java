@@ -34,6 +34,8 @@ public double eccentricity(ImageProcessor I) {
 	return numerator/denominator;
 }
 
+	
+	//taken from the textbook
 	double moment(ImageProcessor I, int p, int q) {
 		double Mpq = 0.0;
 		for (int v = 0; v < I.getHeight(); v++) {
@@ -45,7 +47,7 @@ public double eccentricity(ImageProcessor I) {
 		}
 	 	return Mpq;
 	 }
-	 // Central moments:
+	 // Central moments: taken from the textbook
 
 	 double centralMoment(ImageProcessor I, int p, int q) {
 	 	double m00 = moment(I, 0, 0); // region area
@@ -62,7 +64,7 @@ public double eccentricity(ImageProcessor I) {
 	 	return cMpq;
 	 }
 
-	 // Normalized central moments:
+	 // Normalized central moments: taken from the textbook
 
 	 double nCentralMoment(ImageProcessor I, int p, int q) {
 	 	double m00 = moment(I, 0, 0);
